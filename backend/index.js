@@ -24,11 +24,12 @@ const app = express();
 // Middleware setup
 app.use(
   cors({
-    origin: ["https://my-hotel-bhxy.vercel.app"],
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
+
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
