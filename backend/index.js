@@ -22,9 +22,9 @@ const {
 const app = express();
 
 // Middleware setup
-app.use(
+ app.use(
   cors({
-    origin: "*",
+    origin: ["https://my-hotel-bhxy.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
