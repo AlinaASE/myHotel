@@ -17,10 +17,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/pannel" element={<Pannel />} />
-        <Route path="/k" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/sign" element={<Sign />} />
         <Route path="/forget" element={<Forgot />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/restPassword/:id/:token" element={<Rest />} />
         <Route path="/profile" element={<ProfileCard />} />
       </Routes>
