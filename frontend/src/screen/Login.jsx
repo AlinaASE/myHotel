@@ -33,7 +33,7 @@ function Login() {
     else{
 
       axios
-      .post("http://localhost:5000/Login", { email, password })
+      .post("https://my-hotel-mauve.vercel.app/Login", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data.Status === "Success") {
