@@ -29,6 +29,9 @@ const app = express();
     credentials: true,
   })
 );
+app.get('/deal', (req, res) => {
+  res.json({ message: "CORS is working!" });
+});
 
 app.use(bodyParser.json());
 app.use(cookieParser());
